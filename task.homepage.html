@@ -1,0 +1,318 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+    }
+    .top{
+    background-image: url('bg-image.png') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.1);
+    height: 450px;
+    /* opacity: 0.4; */
+    position: relative;
+    min-height: 450px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    /* background-image: linear-gradient(grey,grey); */
+}
+.para{
+    font-size: 20px;
+    padding-bottom: 1em;
+}
+.bg{
+    padding-left: 12em;
+    padding-right: 12em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    /* background-image: linear-gradient(grey,grey) */
+}
+    .bg::before{
+        content: "";
+        background-image: url('bg-image.png') ;
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.4;
+        height: 450px;
+        z-index: -1;
+
+    } */
+    h1{
+        position: relative;
+        /* padding-bottom: 2em; */
+        /* padding-top: 2em; */
+    }
+    .btn{
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    /* padding: 1em 2em; */
+    border: 1px solid #666;
+    /* font-weight: bold; */
+    margin: 5em;
+    line-height: 1.5em;
+    padding: 1em 2em;
+    border-width: 1px;
+    
+    }
+    h2{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    color: rgb(51, 51, 51);
+    margin: 0px;
+    padding: 1em 0px;
+    padding-top: 2em;
+    font-weight: bold;
+    }
+    .content-text1{
+        display: flex;
+        flex-direction: row;
+        font-size: 20px;
+        text-align: center;
+        justify-content: space-around;
+        padding-bottom: 2em;
+        padding-left: 8em;
+        padding-right: 8em;
+    }
+    .content-text2{
+        display: flex;
+        flex-direction: row;
+        font-size: 20px;
+        text-align: center;
+        justify-content: space-around;
+        margin-bottom: 2em;
+        padding: 1em 0em;
+        padding-right: 8em;
+        padding-left: 8em;
+
+    }
+    .second{
+        background: rgb(234, 234, 234);
+        
+    }
+    .third-wrapper{
+        display: flex;
+        justify-content: space-around;
+        background-color: #333;
+        color: #fff;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        padding-right: 12em;
+        padding-left: 12em;
+    }
+    .card{
+        margin-bottom: 2em;
+        margin-top: 2em;
+        width: 270px;
+        /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+        text-align: center;
+        background-color: #fff;
+        color: #333;
+        font-size: 1.1em;
+        line-height: 1.5;
+        
+}
+    .div-header{
+        /* display: flex;
+        flex-direction: column; */
+        font-weight: bold;
+        font-size: 20px;
+        justify-content: space-around;
+        margin-top: 1.5em;
+        
+    }
+    .div-content{
+        /* display: flex;
+        flex-direction: column; */
+        /* margin-bottom: 1.5em;
+        padding-right: 2em;
+        padding-left: 2em; */
+    }
+    .forth-wrapper{
+        /* color: rgb(255, 255, 255); */
+        padding: 1em 0em;
+        
+    }
+    .fifth-wrapper{
+        display: flex;
+        justify-content: space-evenly;
+    justify-content: center;
+    text-align: center;
+    border-spacing: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+    
+    }
+    .div-one{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        background: rgb(38, 144, 212);
+        padding: 1em 0em;
+        width: 50%;
+
+    }
+    .div-two{
+        text-align: center;
+        background: rgb(51, 51, 51);
+        color: rgb(255, 255, 255);
+        padding: 1em 0em;
+        width: 50%;
+        
+        
+    }
+    .fifth-title{
+        color: rgb(255, 255, 255);
+        
+    }
+    .fifth-text{
+        color: rgb(255, 255, 255);
+        padding: 2em 0em;
+        padding-right: 2em;
+        padding-left: 2em;
+
+    }
+    .last-wrapper{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.1em;
+        line-height: 1.5;
+        color: #ffffff;
+        color: rgb(255, 255, 255);
+        width: 100%;
+        background: rgb(0, 0, 0);
+        display: flex;
+        /* justify-content: space-between; */
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        padding: 2em 0em;
+    }
+
+    .div2{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        margin: 3px;
+    }
+    .border-link{
+        text-decoration: none;
+        margin-left: 10px;
+        text-decoration: none;
+        color: rgb(38, 144, 212);
+    }
+
+
+    
+    /* Media Queries for Responsiveness */
+    @media screen and (max-width: 768px) {
+        .bg {
+            padding: 2em;
+        }
+        .content-text1, .content-text2, .third-wrapper {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card {
+            margin: 2em auto;
+        }
+        .fifth-wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+</style>
+<body>
+    <div class="top">
+        <div class="bg">
+        <h1>Welcome to Acme Web Solutions</h1>
+        <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci eum error earum soluta voluptatum nisi laboriosam eos saepe asperiores dolorum.</p>
+        <a href="#section-b" class="btn">Read More</a>
+        </div>
+    </div>
+
+    <div class="second">
+        <h2 class="content-title">Web & Application Development</h2>
+        <div class="content-text1">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint eligendi possimus? Unde officiis magnam laborum ipsa distinctio odio, vero dolores
+        </p>
+        <p>
+            dicta aliquam aperiam repellendus. Perferendis officiis deserunt velit voluptas nobis sequi animi totam, accusantium, ex eius quia, natus quo?
+        </p>
+        </div>
+    </div>
+
+    <div class="third-wrapper">
+            <div class="card">
+                <img src="bg3.jpeg" alt="Norway" style="width:100%">
+                <div class="div-header"><p>Web Development</p></div>
+                <div class="div-content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p></div>
+            </div>
+            <div class="card">
+                <img src="bg2.jpeg" alt="Norway" style="width:100%">
+                <div class="div-header"><p>Mobile Applications</p></div>
+                <div class="div-content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p></div>
+            </div>
+            <div class="card">
+                <img src="bg1.jpeg" alt="Norway" style="width:100%">
+                <div class="div-header"><p>Web Development</p></div>
+                <div class="div-content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p></div>
+            </div>
+    </div>
+
+        <div class="forth-wrapper">
+            <h2 class="content-title">We handle all of your digital needs
+            </h2>
+            <div class="content-text2">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nam rerum vel earum error fugiat cupiditate, dolore eius! Minus, explicabo.
+            </div>
+        </div>
+
+        <div class="fifth-wrapper">
+            <div class="div-one">
+                <h2 class="fifth-title">Contact Us</h2>
+                <div class="fifth-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, suscipit. Rerum ducimus a quod, ut et voluptas obcaecati unde fuga.</div>
+                <p>contact@acmewebsolutions.test</p>
+            </div>
+            <div class="div-two">
+                <h2 class="fifth-title">About Our Company</h2>
+                <p class="fifth-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum porro deserunt, deleniti, quae facere repudiandae, officiis est exercitationem nobis iusto doloremque! Soluta excepturi in aut suscipit amet temporibus quo?</p>
+            </div>
+        </div>
+        <div class="last-wrapper">
+            <div class="div1">Acme Web Solutions</div>
+            <div class="div2">
+                <div>Project By</div>
+                <div><a href="#" class="border-link">Traversy Media</a></div>
+            </div>
+        </div>
+</body>
+</html>
